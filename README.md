@@ -1,0 +1,2 @@
+# PawcoinMN
+Masternode Script

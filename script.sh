@@ -21,31 +21,16 @@ echo "░░▄▄█▀▀▀▀█░░░█▀▀▀▀█▄▄░░"
 echo "░░▀▄▄▄▄▄▀▀░░░▀▀▄▄▄▄▄▀░"
 sleep 3s
 clear
-echo "###################################################################################"
-echo "#                          WHAT IS YOUR UBUNTU VERSION                            #"
-echo "#                    Type -> 16 <- to Ubuntu 16 release                           #"
-echo "#                    Type -> 18 <- to Ubuntu 18 resease                           #"
-echo "###################################################################################"
-read choise
-clear
 echo "Downloading latest build..."
 sleep 1s
 echo " The Default directory is /usr/local/bin"
-sleep 1s
-if [ $choise = '16' ]; then
-  wget https://github.com/PawcoinNew/Pawcoin/releases/download/3.4/Pawcoinv3.4-Ubuntu16.tar.gz && sudo tar xvzf Pawcoinv3.4-Ubuntu16.tar.gz -C /usr/local/bin && sudo chmod +x /usr/local/bin/pawcoin*
-elif [ $choise = '18' ]; then
-  wget https://github.com/PawcoinNew/Pawcoin/releases/download/3.4/Pawcoinv3.4-Ubuntu18.tar.gz && sudo tar xvzf Pawcoinv3.4.Ubuntu18.tar.gz -C /usr/local/bin && sudo chmod +x /usr/local/bin/pawcoin*
-else
-  echo "That is not a valid option, Please try again" 
-  exit -1
-fi
+wget https://github.com/PawcoinNew/Pawcoin/releases/download/3.4/pawcoinv3.4-headless.static.tar.gz && sudo tar xvzf pawcoinv3.4-headless.static.tar.gz -C /usr/local/bin && sudo chmod +x /usr/local/bin/pawcoin*
 sleep 1s
 echo "done"
 sleep 1s
 clear 
 echo "Removing old files...."
-rm -rf Pawcoinv3.4-Ubuntu16.tar.gz Pawcoinv3.4-Ubuntu18.tar.gz
+rm -rf pawcoinv3.4-headless.static.tar.gz
 sleep 1s
 echo "done"
 sleep 1s

@@ -22,6 +22,7 @@ echo "░░▀▄▄▄▄▄▀▀░░░▀▀▄▄▄▄▄▀░"
 sleep 3s
 clear
 COIN_TGZ=https://github.com/PawcoinNew/Pawcoin/releases/download/3.4.1/pawcoinv3.4.1-headless.static.tar.gz
+IP=$(curl -s4 icanhazip.com)
 echo "Downloading latest build..."
 sleep 1s
 echo " The Default directory is /usr/local/bin"
@@ -66,8 +67,6 @@ sleep 1s
 echo "done"
 sleep 1s
 clear
-echo "Enter your IPV4 for the PAWCOIN MASTER NODE"
-read IP
 echo "Enter your masternode private key for node"
 read PRIVKEY
 

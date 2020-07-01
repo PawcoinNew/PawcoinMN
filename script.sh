@@ -97,6 +97,6 @@ sudo ufw enable
 sleep 2s
 clear
 pawcoind
-echo " FINISH :)"
+echo " FINISHED:) take note the following info for add in your windows masternodes.conf: the IP is $IP and your port is $port"
 sleep 10s
 watch pawcoin-cli getinfo

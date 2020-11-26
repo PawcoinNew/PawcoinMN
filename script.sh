@@ -21,18 +21,18 @@ echo "░░▄▄█▀▀▀▀█░░░█▀▀▀▀█▄▄░░"
 echo "░░▀▄▄▄▄▄▀▀░░░▀▀▄▄▄▄▄▀░"
 sleep 3s
 clear
-COIN_TGZ=https://github.com/PawcoinNew/Pawcoin/releases/download/3.4.1/pawcoinv3.4.1-headless.static.tar.gz
+COIN_TGZ=https://github.com/PawcoinNew/Pawcoin/releases/download/3.4.2/pawcoinv3.4.2-headless.static.tar.gz
 IP=$(curl -s4 icanhazip.com)
 echo "Downloading latest build..."
 sleep 1s
 echo " The Default directory is /usr/local/bin"
-wget $COIN_TGZ && sudo tar xvzf pawcoinv3.4.1-headless.static.tar.gz -C /usr/local/bin && sudo chmod +x /usr/local/bin/pawcoin*
+wget $COIN_TGZ && sudo tar xvzf pawcoinv3.4.2-headless.static.tar.gz -C /usr/local/bin && sudo chmod +x /usr/local/bin/pawcoin*
 sleep 1s
 echo "done"
 sleep 1s
 clear 
 echo "Removing old files...."
-rm -rf pawcoinv3.4.1-headless.static.tar.gz
+rm -rf pawcoinv3.4.2-headless.static.tar.gz
 sleep 1s
 echo "done"
 sleep 1s
